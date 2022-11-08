@@ -1,8 +1,4 @@
-a = input("a: ")
-b = input("b: ")
+lista = [1,2,3,4,5]
 
-a,b = b,a
-
-print(f"El nuevo valor es a : {a}")
-print(f"El nuevo valor es b : {b}")
-
+lista.extend([6,7,8])
+print(lista)

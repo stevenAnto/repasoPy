@@ -1,12 +1,5 @@
-def func(d):
-    for key in d:
-        print(key,":",d[key])
+def display(**name):
+    print(name["primerName"]+" "+name["segundoName"]+" "+name["apellido"])
 
-diccionari = {
-        "nombre":"Esteven",
-        "edad":29,
-        "sexo":"Masculino"
-        }
 
-nombre = "esteven"
-func(nombre)
+display(primerName = "Esteven",segundoName="Antonio",apellido="Calcina")

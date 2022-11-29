@@ -1,5 +1,11 @@
 def display(**name):
-    print(name["primerName"]+" "+name["segundoName"]+" "+name["apellido"])
+    for key in name:
+        print(key,":",name[key])
 
 
-display(primerName = "Esteven",segundoName="Antonio",apellido="Calcina")
+diccionario = {
+        "nombre":"esteven",
+        "Apellido":"calcina"
+        }
+display(diccionario,k="a")
+#display(primerName = "Esteven",segundoName="Antonio",apellido="Calcina")

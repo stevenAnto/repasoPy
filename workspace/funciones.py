@@ -1,15 +1,12 @@
-def recorrerParametrosArbitrarios(pFijo,*arbitrarios,**diccionario):
-    print( pFijo)
-    for argumento in arbitrarios:
-        print (argumento)
+def func(d):
+    for key in d:
+        print(key,":",d[key])
 
-    for clave in diccionario:
-        print ("el valor es", clave,"es",diccionario[clave])
-        
-
-diccionario1 ={
-        "year":1964,
-        "color":"red"
+diccionari = {
+        "nombre":"Esteven",
+        "edad":29,
+        "sexo":"Masculino"
         }
-recorrerParametrosArbitrarios("fijo","arbi1","arbi2",diccionario1)
 
+nombre = "esteven"
+func(nombre)
